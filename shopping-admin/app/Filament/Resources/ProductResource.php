@@ -62,15 +62,13 @@ class ProductResource extends Resource
                 ->label('รูปภาพ'),
                 TextColumn::make('name')
                 ->label('ชื่อสินค้า'),
-                TextColumn::make('category.name')
-                ->label('หมวดหมู่สินค้า'),
                 TextColumn::make('description')
                 ->label('คำอธิบาย'),
                 TextColumn::make('price')
                 ->label('ราคา'),
                 TextColumn::make('stock')
                 ->label('จำนวนสินค้า'),
-
+                
             ])
             ->filters([
                 //
@@ -88,7 +86,7 @@ class ProductResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            
         ];
     }
 
